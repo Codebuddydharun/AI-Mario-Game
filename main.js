@@ -1,8 +1,14 @@
 function preload() {
 	world_start = loadSound("world_start.wav");
+  mario_jump=loadSound("jump.wav");
+  mario_coins=loadSound("coin.wav");
+  mario_kick=loadSound("kick.wav");
+  game_over=loadSound("gameover.wav");
 	setSprites();
 	MarioAnimation();
+  mario_die=loadSound("mariodie.wav");
 }
+
 
 function setup() {
 	canvas = createCanvas(1240,336);
